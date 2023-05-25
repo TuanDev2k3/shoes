@@ -271,7 +271,7 @@ section{
 }
 .box{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
     gap: 30px;
     justify-content: center;
 }
