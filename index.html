@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="vn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <title>Nike Shos</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+             <h1>Shoe<span>s</span></h1>
+        </div>
+
+        <div class="navlist">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Products">Products</a></li>
+            <li><a href="#Review">Review</a></li>
+            <li><a href="#Servises">Servises</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </div>
+
+        <div class="nav-icons">
+            <a id="search"><i class="fas fa-search"></i></a>
+            <a id="cart"><i class="fas fa-cart-plus"></i></a>
+            <a id="menu-icon"><i class="fas fa-bars"></i></a>
+            <input type="search" placeholder="Search" class="search">
+            <div class="cart">
+                <h2>Your cart</h2>
+                <!-- -----Add cart----- -->
+                <div class="cart-content">
+                    
+                </div>
+                <!-- ------------------ -->
+                <div class="total">Total: $0</div>
+                <button class="btn-cart" onclick="buyButton()">Buy now</button>
+                <i class="fas fa-window-close" id="close-Cart"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- home -->
+
+    <section class="main" id="Home">
+        <div class="main_content">
+            <div class="main_text">
+                <h1>NIKE<br><span>Collection</span></h1>
+                <p>
+                    Chào mừng bạn đến với Shoes Shop - nơi bạn có thể sở hữu cho mình những đôi giày đẹp và chất lượng.<br>
+                    Với phương châm đem lại sự hài lòng cho khách từ những sản phẩm chất lượng và hot nhất thị trường.<br>
+                    Chúng tôi cam kết là nơi kinh doanh giày chính hãng 100%, nói không với sản phẩm giả mạo trôi nổi trên thị trường.
+                </p>
+            </div>
+            <div class="main_image">
+                <img src="image/logshoes.png">
+            </div>
+        </div>
+        <div class="btn">
+            <a href="#Products">SHOP NOW<i class="fas fa-chevron-right"></i></a>
+        </div>
+    </section>
+
+    <!--Products-->
+
+    <section class="products" id="Products">
+        <h1>Products</h1>
+
+        <div class="box">
+            <!-- SHOE 1 -->
+            <div class="card" data-title="JORDAN">
+                <div class="small_card">
+                    <i class="fas fa-heart"></i>
+                </div>
+
+                <img src="image/shoes1.png" class="image">
+
+                <div class="products_text">
+                    <h2 class="card-title">JORDAN SERIES SE</h2>
+                    <p>
+                        Nếu tôi thích một đôi giày, tôi sẽ mua chúng.
+                    </p>
+                    <h3 class="card-price">$100.00</h3>
+                    <div class="products_star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <button class="btnn" onclick="show(1)">Buy now</button>
+                </div>
+                <i class="fas fa-cart-plus add-cart"></i>
+            </div>
+            <!-- SHOE 2 -->
+            <div class="card" data-title="AIR">
+                <div class="small_card">
+                    <i class="fas fa-heart"></i>
+                </div>
+
+                <img src="image/shoes2.png" class="image">
+
+                <div class="products_text">
+                    <h2 class="card-title">AIR FORCE 1</h2>
+                    <p>
+                        Một đôi giày có thể thay đổi cả cuộc đời bạn!
+                    </p>
+                    <h3 class="card-price">$200.00</h3>
+                    <div class="products_star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="btnn" onclick="show(2)">Buy now</button>
+                </div>
+                 <i class="fas fa-cart-plus add-cart"></i>
+            </div>
+            <!-- SHOE 3 -->
+            <div class="card" data-title="ADIDAS">
+                <div class="small_card">
+                    <i class="fas fa-heart"></i>
+                </div>
+
+                <img src="image/shoes3.png" class="image">
+
+                <div class="products_text">
+                    <h2 class="card-title">ADIDAS ULTRA 4DFWD</h2>
+                    <p>
+                        Tôi không thể rời mắt khỏi đôi giày này
+                    </p>
+                    <h3 class="card-price">$175.00</h3>
+                    <div class="products_star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <button class="btnn" onclick="show(3)">Buy now</button>
+                </div>
+                 <i class="fas fa-cart-plus add-cart"></i>
+            </div>
+            <!-- SHOE 4 -->
+            <div class="card" data-title="NIKE">
+                <div class="small_card">
+                    <i class="fas fa-heart"></i>
+                </div>
+
+                <img src="image/shoes4.png" class="image">
+                <div class="products_text">
+                    <h2 class="card-title">NIKE PEGASUS 39</h2>
+                    <p>
+                        Người phụ phữ với đôi giày tốt thì không bao giờ xấu.
+                    </p>
+                    <h3 class="card-price">$120.00</h3>
+                    <div class="products_star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="btnn" onclick="show(4)">Buy now</button>
+                </div>
+                 <i class="fas fa-cart-plus add-cart"></i>
+            </div>
+            <!-- SHOE 5 -->
+            <div class="card" data-title="AIR">
+                <div class="small_card">
+                    <i class="fas fa-heart"></i>
+                </div>
+
+                <img src="image/shoes5.png" class="image">
+
+                <div class="products_text">
+                    <h2 class="card-title">AIR MAX EXCEE</h2>
+                    <p>
+                        Tôi sẽ chinh phục bạn bằng mọi size
+                    </p>
+                    <h3 class="card-price">$150.00</h3>
+                    <div class="products_star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <button class="btnn" onclick="show(5)">Buy now</button>
+                </div>
+                 <i class="fas fa-cart-plus add-cart"></i>
+            </div>
+            <!-- SHOE 6 -->
+            <div class="card" data-title="YEEZY">
+                <div class="small_card">
+                    <i class="fas fa-heart"></i>
+                </div>
+
+                <img src="image/shoes6.png" class="image">
+
+                <div class="products_text">
+                    <h2 class="card-title">YEEZY BOOST 350</h2>
+                    <p>
+                        Hãy chọn tôi vì bạn xứng đáng có tôi
+                    </p>
+                    <h3 class="card-price">$220.00</h3>
+                    <div class="products_star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <button class="btnn" onclick="show(6)">Buy now</button>
+                </div>
+                 <i class="fas fa-cart-plus add-cart"></i>
+            </div>
+            <!-- SHOE 7 -->
+            <div class="card" data-title="NIKE">
+                <div class="small_card">
+                    <i class="fas fa-heart"></i>
+                </div>
+
+                <img src="image/shoes7.png" class="image">
+
+                <div class="products_text">
+                    <h2 class="card-title">NIKE WAFFLE DEBUT</h2>
+                    <p>
+                        Tôi không thể tập trung được trên mặt phẳng.
+                    </p>
+                    <h3 class="card-price">$110.00</h3>
+                    <div class="products_star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="btnn" onclick="show(7)">Buy now</button>
+                </div>
+                 <i class="fas fa-cart-plus add-cart"></i>
+            </div>
+            <!-- SHOE 8 -->
+            <div class="card" data-title="NIKE">
+                <div class="small_card">
+                    <i class="fas fa-heart"></i>
+                </div>
+
+                <img src="image/shoes8.png" class="image">
+
+                <div class="products_text">
+                    <h2 class="card-title">NIKE COURT ROYALE</h2>
+                    <p>
+                        Một đôi giầy có thể thay đổi cuộc đời bạn..
+                    </p>
+                    <h3 class="card-price">$180.00</h3>
+                    <div class="products_star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="btnn" onclick="show(8)">Buy now</button>
+                </div>
+                 <i class="fas fa-cart-plus add-cart"></i>
+            </div>
+            <!-- SHOE 9 -->
+            <div class="card"  data-title="JORDAN">
+                <div class="small_card">
+                    <i class="fas fa-heart"></i>
+                </div>
+
+                <img src="image/shoes9.png" class="image">
+
+                <div class="products_text">
+                    <h2 class="card-title">JORDAN MAX BLACK</h2>
+                    <p>
+                        Tôi không sợ độ cao, bạn đã thấy giầy của tôi chưa.
+                    </p>
+                    <h3 class="card-price">$300.00</h3>
+                    <div class="products_star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="btnn" onclick="show(9)">Buy now</button>
+                </div>
+                 <i class="fas fa-cart-plus add-cart"></i>
+            </div>
+            <!-- SHOE 10-->
+            <div class="card" data-title="NIKE">
+                <div class="small_card">
+                    <i class="fas fa-heart"></i>
+                </div>
+
+                <img src="image/shoe10.png" class="image">
+
+                <div class="products_text">
+                    <h2 class="card-title">NIKE DUNK HIGH II</h2>
+                    <p>
+                        Bạn là nhất - bạn là số một. Bạn là của tôi.
+                    </p>
+                    <h3 class="card-price">$250.00</h3>
+                    <div class="products_star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="btnn" onclick="show(10)">Buy now</button>
+                </div>
+                 <i class="fas fa-cart-plus add-cart"></i>
+            </div>
+            <!-- SHOE 11 -->
+            <div class="card" data-title="NIKE">
+                <div class="small_card">
+                    <i class="fas fa-heart"></i>
+                </div>
+
+                <img src="image/shoe11.png" class="image">
+
+                <div class="products_text">
+                    <h2 class="card-title">NIKE REVOLUTION I</h2>
+                    <p>
+                        Nếu tôi thích một đôi giày, tôi sẽ mua chúng.
+                    </p>
+                    <h3 class="card-price">$125.00</h3>
+                    <div class="products_star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="btnn" onclick="show(11)">Buy now</button>
+                </div>
+                <i class="fas fa-cart-plus add-cart"></i>
+            </div>
+            <!-- SHOE 12 -->
+            <div class="card" data-title="NIKE">
+                <div class="small_card">
+                    <i class="fas fa-heart"></i>
+                </div>
+
+                <img src="image/shoe12.png" class="image">
+
+                <div class="products_text">
+                    <h2 class="card-title">NIKE WIDE FIT</h2>
+                    <p>
+                        Người phụ phữ với đôi giày tốt thì không bao giờ xấu.
+                    </p>
+                    <h3 class="card-price">$210.00</h3>
+                    <div class="products_star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="btnn" onclick="show(12)">Buy now</button>
+                </div>
+                <i class="fas fa-cart-plus add-cart"></i>
+            </div>
+        </div>
+
+        <!-- Option shoe -->
+        <div class="options">
+            <div class="option-img">
+                <img src="">
+                <div class="option-icon">
+                    <a><i class="fab fa-instagram"></i></a> 
+                    <a><i class="fab fa-facebook"></i></a>
+                    <a><i class="fab fa-tiktok"></i></a>
+                    <a><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="options-text">
+                <div class="close">
+                    <i class="fas fa-window-close"></i>
+                </div>
+                <h2></h2>
+                <div class="products_star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3></h3>
+                <div class="s_size">Size: <span style="color: blueviolet;font-weight: bold;">No</span></div>
+                <div class="box-size">
+                    <span class="size" onclick="size(40)">40</span>
+                    <span class="size" onclick="size(41)">41</span>
+                    <span class="size" onclick="size(42)">42</span>
+                    <span class="size" onclick="size(43)">43</span>
+                    <span class="size" onclick="size(44)">44</span>
+                    <span class="size" onclick="size(45)">45</span>
+                </div>
+                <div class="box-num">
+                    <h4>Số lượng: </h4>
+                    <span class="minus">-</span>
+                    <div class="num">01</div>
+                    <span class="plus">+</span>
+                </div>
+                <div class="s-option">
+                    <button class="btnn" onclick="chat()">Chat now</button>
+                    <button class="btnn" onclick="buynow()">Buy now</button>
+                </div>
+                
+                <p>Hoặc đặt mua: <span>0363 606 453</span>   ( Tư vấn Miễn phí )</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!--Review-->
+
+    <section class="review" id="Review">
+        <h1>Customer's Review</h1>
+        
+        <div class="review-content">
+
+            <div class="box-review">
+                <p>Product is very nice. It's really good, I bought it and used it for 1 year. 
+                    I really love the Shoes Shop and I will be back in the future.</p> 
+                <div class="in-box">
+                    <div class="bx-img">
+                        <img src="./image/tri.jpg">
+                    </div>
+                    <div class="bxx-text">
+                        <h4>Duy Trí</h4>
+                        <h5>Food Vlogger</h5>
+                        <div class="ratings">
+                            <a href="#"><i class="fas fa-star"></i></a>
+                            <a href="#"><i class="fas fa-star"></i></a>
+                            <a href="#"><i class="fas fa-star"></i></a>
+                            <a href="#"><i class="fas fa-star"></i></a>
+                            <a href="#"><i class="fas fa-star-half-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-review">
+                <p>Product is very nice. It's really good, I bought it and used it for 1 year. 
+                    I really love the Shoes Shop and I will be back in the future.</p> 
+                <div class="in-box">
+                    <div class="bx-img">
+                        <img src="./image/Phong.jpg">
+                    </div>
+                    <div class="bxx-text">
+                        <h4>Quốc Phong</h4>
+                        <h5>Food Vlogger</h5>
+                        <div class="ratings">
+                            <a href="#"><i class="fas fa-star"></i></a>
+                            <a href="#"><i class="fas fa-star"></i></a>
+                            <a href="#"><i class="fas fa-star"></i></a>
+                            <a href="#"><i class="fas fa-star-half-alt"></i></a>
+                            <a href="#"><i class="far fa-star"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-review">
+                <p>Product is very nice. It's really good, I bought it and used it for 1 year. 
+                    I really love the Shoes Shop and I will be back in the future.</p> 
+                <div class="in-box">
+                    <div class="bx-img">
+                        <img src="./image/hieu.jpg">
+                    </div>
+                    <div class="bxx-text">
+                        <h4>Minh Hiếu</h4>
+                        <h5>Food Vlogger</h5>
+                        <div class="ratings">
+                            <a href="#"><i class="fas fa-star"></i></a>
+                            <a href="#"><i class="fas fa-star"></i></a>
+                            <a href="#"><i class="fas fa-star"></i></a>
+                            <a href="#"><i class="far fa-star"></i></a>
+                            <a href="#"><i class="far fa-star"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-review">
+                <p>Product is very nice. It's really good, I bought it and used it for 1 year. 
+                    I really love the Shoes Shop and I will be back in the future.</p> 
+                <div class="in-box">
+                    <div class="bx-img">
+                        <img src="./image/Luffy.jpg">
+                    </div>
+                    <div class="bxx-text">
+                        <h4>Luffy</h4>
+                        <h5>Food Vlogger</h5>
+                        <div class="ratings">
+                            <a href="#"><i class="fas fa-star"></i></a>
+                            <a href="#"><i class="fas fa-star"></i></a>
+                            <a href="#"><i class="fas fa-star"></i></a>
+                            <a href="#"><i class="fas fa-star"></i></a>
+                            <a href="#"><i class="far fa-star"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-review">
+                <p>Product is very nice. It's really good, I bought it and used it for 1 year. 
+                    I really love the Shoes Shop and I will be back in the future.</p> 
+                <div class="in-box">
+                    <div class="bx-img">
+                        <img src="./image/Zoro.jpg">
+                    </div>
+                    <div class="bxx-text">
+                        <h4>Zoro</h4>
+                        <h5>Food Vlogger</h5>
+                        <div class="ratings">
+                            <a href="#"><i class="fas fa-star"></i></a>
+                            <a href="#"><i class="fas fa-star"></i></a>
+                            <a href="#"><i class="fas fa-star"></i></a>
+                            <a href="#"><i class="far fa-star"></i></a>
+                            <a href="#"><i class="far fa-star"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-review">
+                <p>Product is very nice. It's really good, I bought it and used it for 1 year. 
+                    I really love the Shoes Shop and I will be back in the future.</p> 
+                <div class="in-box">
+                    <div class="bx-img">
+                        <img src="./image/naruo.jpg">
+                    </div>
+                    <div class="bxx-text">
+                        <h4>Naruto</h4>
+                        <h5>Food Vlogger</h5>
+                        <div class="ratings">
+                            <a href="#"><i class="fas fa-star"></i></a>
+                            <a href="#"><i class="fas fa-star"></i></a>
+                            <a href="#"><i class="fas fa-star"></i></a>
+                            <a href="#"><i class="far fa-star"></i></a>
+                            <a href="#"><i class="far fa-star"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+     <!--Services-->
+     <section class="services" id="Servises">
+        <h1>Our services</h1>
+        <div class="services_cards">
+            <div class="services_box">
+                <i class="fas fa-truck"></i>
+                <h3>Fast Delivery</h3>
+                <p>
+                    Delivery Service
+                </p>
+            </div>
+            <div class="services_box">
+                <i class="fas fa-undo"></i>
+                <h3>10 Days Replacement</h3>
+                <p>
+                    Return Policy
+                </p>
+            </div>
+            <div class="services_box">
+                <i class="fas fa-headset"></i>
+                <h3>24 x 7 Support</h3>
+                <p>
+                    Support Now
+                </p>
+            </div>
+            <div class="services_box">
+                <i class="far fa-clock"></i>
+                <h3>7:00m am - 8:00 pm</h3>
+                <p>
+                    Working Hours
+                </p>
+            </div>
+            <div class="services_box">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Shoe Shop</h3>
+                <p>
+                    Get Directions
+                </p>
+            </div>
+            <div class="services_box">
+                <i class="fas fa-phone"></i>
+                <h3>(0363) 606 565</h3>
+                <p>
+                    Call Us Now
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="Contact">
+        <h1>Contact Us</h1>
+        <div class="contact-box">
+            <div class="contact-img">
+                <img src="./image/logshoes.png" alt="">
+            </div>
+            <form>
+                <h2>Welcome Back!</h2>
+                <div class="input-box">
+                    <p>User Name</p>
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="user" placeholder="User Name" class="username" required>
+                </div>
+                <div class="input-box">
+                    <p>Password</p>
+                    <i class="fas fa-unlock-alt"></i>
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <p class="forget">Forget Password ?</p>
+
+                <button type="submit" class="btn-login">Login</button>
+                <div class="loging_icon">
+                    <a href="#"><img src="image/google.png"></a>
+                    <a href="#"><img src="image/facebook.png"></a>
+                    <a href="#"><img src="image/twitter.png"></a>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- =================================== -->
+    <footer>
+        <div class="footer-text">
+            <h1>Shoe Shop</h1>
+            <li><i class="fas fa-map-marker-alt"></i> 123 Long Thanh - Dong Nai</li>
+            <li><i class="fas fa-phone"></i> + (0890) 898 536</li>
+            <li><i class="far fa-envelope"></i> shoe123@gmail.com</li>
+            <li><i class="fas fa-user"></i> Uong Minh Khai</li>
+        </div>
+        <div class="footer-icon">
+            <h1>Follow Us</h1>
+            <a href="#"><i class="fab fa-instagram"></i></a> 
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-google"></i></a>
+        </div>
+        <img src="./image/map.jpg" alt="">
+    </footer>
+    <div class="scroll">
+        <a href="#"><i class="fas fa-angle-up"></i></a>
+    </div>
+
+
+    <!--=========== Other ========= -->
+    <div class="box-chat">
+        <div class="close">
+            <i class="fas fa-window-close"></i>
+        </div>
+        <div class="chat-head">
+            <img src="./image/logo.png">
+            <h5>SHOES</h5>
+        </div>
+        <div class="chat-text">
+            <div class="screen">
+                <p>Welcome to Shoes Store</p>
+                <p>Can I help you ?</p>
+                <br>
+            </div>
+            <input type="text" placeholder="Message">
+            <i class="fas fa-paper-plane"></i>
+        </div>
+    </div>
+
+    <!-- MiniBox  -->
+    <div class="miniBox">
+        <img src="./image/tick.jpg">
+        <h1>Thank You</h1>
+        <h4>Order completed.<span></span>. Thanks!</h4>
+        <button>OK</button>
+    </div>
+    <script src="jscrip.js"></script>
+</body>
+</html>
